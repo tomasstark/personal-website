@@ -1,1 +1,1 @@
-This is my personal website. Enjoy.
+This is codebase of my personal website. Enjoy.
