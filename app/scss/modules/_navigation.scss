@@ -1,0 +1,38 @@
+.navigation {
+    margin-top: 18px;
+
+    &__item {
+        display: inline-block;
+        padding: 0 10px;
+        font-weight: 600;
+        font-size: 1.5rem;
+
+        &:before {
+            content: '//';
+            padding-right: 20px;
+            font-weight: 300;
+            color: $ci-grey;
+        }
+
+        &:first-child {
+            &:before {
+                content: '';
+            }
+        }
+
+        a {
+            @extend .navigation__link;
+        }
+    }
+
+    &__link {
+        color: $ci-black;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+            color: $ci-orange;
+        }
+    }
+}

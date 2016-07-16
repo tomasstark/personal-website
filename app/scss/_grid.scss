@@ -1,0 +1,22 @@
+$site-max-width: 1200px;
+$cols: 12;
+
+.container {
+    max-width: $site-max-width;
+    margin: 0 auto;
+}
+
+.grid {
+    display: flex;
+}
+
+
+@for $i from 1 to $cols {
+    .col-#{$i} {
+        flex: $i;
+    }
+}
+
+.push-right {
+    text-align: right;
+}

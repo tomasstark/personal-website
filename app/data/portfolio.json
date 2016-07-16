@@ -1,0 +1,80 @@
+{
+    "vw": [
+        {
+            "title": "My Perfect Volkswagen",
+            "logo_file": "vw-logo.png",
+            "bg": {
+                "color": "#deebf6",
+                "image": "vw/vw-beetle.png",
+                "position": "bottom center",
+                "size": "contain"
+            },
+            "description": ""
+        }
+    ],
+    "esso": [
+        {
+            "title": "Esso",
+            "logo_file": "esso-logo.png",
+            "bg": {
+                "color": "#c2bab4",
+                "image": "esso/wheel.png",
+                "position": "center right",
+                "size": "contain"
+            },
+            "description": ""
+        }
+    ],
+    "freelanceri": [
+        {
+            "title": "Freelanceri.sk",
+            "logo_file": "esso-logo.png",
+            "bg": {
+                "color": "#42b98e",
+                "image": "freelanceri/screen.png",
+                "position": "bottom center",
+                "size": "80%"
+            },
+            "description": ""
+        }
+    ],
+    "friedman": [
+        {
+            "title": "Friedman",
+            "logo_file": "esso-logo.png",
+            "bg": {
+                "color": "#f0adad",
+                "image": "friedman/building.png",
+                "position": "bottom center",
+                "size": "contain"
+            },
+            "description": ""
+        }
+    ],
+    "sachse": [
+        {
+            "title": "Esso",
+            "logo_file": "esso-logo.png",
+            "bg": {
+                "color": "#dfd7d2",
+                "image": "sachse/excavator.png",
+                "position": "right center",
+                "size": "contain"
+            },
+            "description": ""
+        }
+    ],
+    "lmb": [
+        {
+            "title": "Linea Mamma Baby",
+            "logo_file": "esso-logo.png",
+            "bg": {
+                "color": "#9dad51",
+                "image": "lmb/teddy.png",
+                "position": "right bottom",
+                "size": "40%"
+            },
+            "description": ""
+        }
+    ]
+}
