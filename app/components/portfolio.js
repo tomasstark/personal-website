@@ -57,7 +57,7 @@ class PortfolioItem extends React.Component {
 
         return(
             <div className={"col-"+this.props.cols+" portfolio__item"} style={style}>
-                <h1>{data.title}</h1>
+                <h1 className="animated fadeIn">{data.title}</h1>
             </div>
         )
     }
