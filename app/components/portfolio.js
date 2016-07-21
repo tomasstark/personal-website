@@ -1,4 +1,5 @@
 import React from 'react';
+import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 
 const PortfolioItems = require('../data/portfolio.json');
 
@@ -49,7 +50,7 @@ class PortfolioItem extends React.Component {
 
         let style = {
             backgroundColor: data.bg.color,
-            backgroundImage: 'url(img/portfolio/'+ data.bg.image +')',
+            backgroundImage: 'url(/img/portfolio/'+ data.bg.image +')',
             backgroundSize: data.bg.size,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: data.bg.position
@@ -58,7 +59,7 @@ class PortfolioItem extends React.Component {
         let logoStyle = {
             width: data.logo._width,
             height: data.logo._height,
-            backgroundImage: 'url(img/portfolio/'+ data.logo.file +')',
+            backgroundImage: 'url(/img/portfolio/'+ data.logo.file +')',
             backgroundSize: ''+data.logo._width+' '+data.logo._height,
             top: data.logo._top
         }
@@ -74,7 +75,7 @@ class PortfolioItem extends React.Component {
                             <h1 className="portfolio-item__title animated fadeIn">{data.title}</h1>
                         </div>
                         <div className="col-1">
-                            <a href="#" className="portfolio-item__button">Show more</a>
+                            <Link to={data.link} className="portfolio-item__button">Show more</Link>
                         </div>
                     </div>
                 </div>

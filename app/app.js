@@ -3,38 +3,33 @@ import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 
 const Header = require('./components/bootstrap/header');
-const Portfolio = require('./components/portfolio');
 const Footer = require('./components/bootstrap/footer');
+const Index = require('./components/index');
+const PortfolioDetail = require('./components/portfolioDetail');
+const NotFound = require('./components/notFound');
 
-const copy = require('./data/copy.json');
+const Container = (props) => <div>
+    <Header />
+    {props.children}
+    <Footer />
+</div>
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <div className="container">
-                    <Header />
-
-                    <main className="main">
-                        <h3 className="intro">{copy.intro}</h3>
-                        <Portfolio />
-                    </main>
-                </div>
-
-                <Footer />
+                <Index />
             </div>
         )
     }
 }
 
-const Container = (props) => <div>
-    {props.children}
-</div>
-
 ReactDOM.render((
     <Router history={browserHistory}>
         <Route path="/" component={Container}>
             <IndexRoute component={App} />
+            <Route path="work/:itemName" component={PortfolioDetail} />
+            <Route path="*" component={NotFound} />
         </Route>
     </Router>
 ), document.getElementById('app'));

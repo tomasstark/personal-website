@@ -1,7 +1,24 @@
 {
     "vw": [
         {
+            "link": "/work/vw",
             "title": "My Perfect Volkswagen",
+            "hero": "vw/hero.jpg",
+            "colors": {
+                "color_1": "#f26722",
+                "color_2": "#e0dfd9",
+                "color_3": "#696b73"
+            },
+            "screenshots": {
+                "mac": "vw/mac.jpg",
+                "tablet": "vw/tablet.jpg",
+                "phone": "vw/mobile.jpg"
+            },
+            "client_logo": {
+                "file": "clients/tribal.png",
+                "_width": "100px",
+                "_height": "155px"
+            },
             "logo": {
                 "file": "vw/vw-logo.png",
                 "_width": "137px",
@@ -14,12 +31,16 @@
                 "position": "bottom center",
                 "size": "contain"
             },
-            "description": ""
+            "description": "I did this My Perfect Volkswagen app for my client Tribal Worldwide. Tribal and Volkswagen are long-term partners and their cooperation started in 1940 with the very first ad for VW Beetle. This project uses Backbone.js and is responsive. Take a look below. I did this My Perfect Volkswagen app for my client Tribal Worldwide. Tribal and Volkswagen are long-term partners and their cooperation started in 1940 with the very first ad for VW Beetle. This project uses Backbone.js and is responsive. Take a look below."
         }
     ],
     "esso": [
         {
+            "link": "/work/vw",
             "title": "Esso",
+            "client_logo": {
+                "file": "clients/tribal/logo.png"
+            },
             "logo": {
                 "file": "esso/esso-logo.png",
                 "_width": "183px",
@@ -37,7 +58,11 @@
     ],
     "freelanceri": [
         {
+            "link": "/work/vw",
             "title": "Freelanceri.sk",
+            "client_logo": {
+                "file": "clients/tribal/logo.png"
+            },
             "logo": {
                 "file": "freelanceri/freelanceri-logo.png",
                 "_width": "253px",
@@ -55,6 +80,7 @@
     ],
     "friedman": [
         {
+            "link": "/work/vw",
             "title": "Friedman",
             "logo": {
                 "file": "friedman/friedman-logo.png",
@@ -73,7 +99,11 @@
     ],
     "sachse": [
         {
+            "link": "/work/vw",
             "title": "Sachse",
+            "client_logo": {
+                "file": "clients/tribal.png"
+            },
             "logo": {
                 "file": "sachse/sachse-logo.png",
                 "_width": "301px",
@@ -91,7 +121,11 @@
     ],
     "lmb": [
         {
+            "link": "/work/vw",
             "title": "Linea Mamma Baby",
+            "client_logo": {
+                "file": "clients/tribal/logo.png"
+            },
             "logo": {
                 "file": "lmb/lmb-logo.png",
                 "_width": "111px",

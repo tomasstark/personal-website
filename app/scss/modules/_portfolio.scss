@@ -64,3 +64,52 @@
         }
     }
 }
+
+.portfolio-detail {
+    &__hero {
+        height: 200px;
+        margin-bottom: 70px;
+        background-size: cover;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    &__showcase {
+        min-height: 600px;
+        padding: 110px 0;
+    }
+}
+
+.portfolio-intro {
+    margin-bottom: 80px;
+
+    &__text {
+        line-height: 2.5rem;
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+}
+
+.portfolio-showcase {
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &--mac {
+        background-image: url(/img/mac.svg);
+        background-size: 885px 544px;
+    }
+
+    &--tablet {
+        background-image: url(/img/tablet.svg);
+        background-size: 434px 643px;
+    }
+
+    &--phone {
+        background-image: url(/img/phone.svg);
+        background-size: 275px 575px;
+    }
+}
