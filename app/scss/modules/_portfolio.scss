@@ -1,7 +1,66 @@
 .portfolio {
     opacity: 0;
-    
+
     &__item {
         height: 330px;
+    }
+
+    &-item {
+        position: relative;
+        overflow: hidden;
+
+        &__logo-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            @include size(100%, 100%);
+        }
+
+        &__logo {
+            position: relative;
+            animation-delay: 1s;
+        }
+
+        &__stripe {
+            position: absolute;
+            bottom: -60px;
+            left: 0;
+            @include size(100%, 60px);
+            background: rgba(0, 0, 0, .8);
+            transition: all 0.2s ease-in-out;
+        }
+
+        &:hover {
+            .portfolio-item__stripe {
+                bottom: 0;
+            }
+        }
+
+        &__title {
+            padding: 0 25px;
+            line-height: 60px;
+            font-size: 1.5rem;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        &__button {
+            float: right;
+            display: inline-block;
+            margin: 15px 25px;
+            padding: 10px 15px 8px;
+            font-size: 1.3rem;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: $ci-orange;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #fff;
+                color: $ci-orange;
+            }
+        }
     }
 }

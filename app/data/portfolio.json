@@ -2,7 +2,12 @@
     "vw": [
         {
             "title": "My Perfect Volkswagen",
-            "logo_file": "vw-logo.png",
+            "logo": {
+                "file": "vw/vw-logo.png",
+                "_width": "137px",
+                "_height": "137px",
+                "effect": "fadeInLeft"
+            },
             "bg": {
                 "color": "#deebf6",
                 "image": "vw/vw-beetle.png",
@@ -15,7 +20,12 @@
     "esso": [
         {
             "title": "Esso",
-            "logo_file": "esso-logo.png",
+            "logo": {
+                "file": "esso/esso-logo.png",
+                "_width": "183px",
+                "_height": "129px",
+                "effect": "fadeInRight"
+            },
             "bg": {
                 "color": "#c2bab4",
                 "image": "esso/wheel.png",
@@ -28,7 +38,12 @@
     "freelanceri": [
         {
             "title": "Freelanceri.sk",
-            "logo_file": "esso-logo.png",
+            "logo": {
+                "file": "freelanceri/freelanceri-logo.png",
+                "_width": "253px",
+                "_height": "140px",
+                "effect": "fadeInLeft"
+            },
             "bg": {
                 "color": "#42b98e",
                 "image": "freelanceri/screen.png",
@@ -41,7 +56,12 @@
     "friedman": [
         {
             "title": "Friedman",
-            "logo_file": "esso-logo.png",
+            "logo": {
+                "file": "friedman/friedman-logo.png",
+                "_width": "324px",
+                "_height": "62px",
+                "effect": "fadeInRight"
+            },
             "bg": {
                 "color": "#f0adad",
                 "image": "friedman/building.png",
@@ -53,8 +73,13 @@
     ],
     "sachse": [
         {
-            "title": "Esso",
-            "logo_file": "esso-logo.png",
+            "title": "Sachse",
+            "logo": {
+                "file": "sachse/sachse-logo.png",
+                "_width": "301px",
+                "_height": "59px",
+                "effect": "fadeInLeft"
+            },
             "bg": {
                 "color": "#dfd7d2",
                 "image": "sachse/excavator.png",
@@ -67,7 +92,12 @@
     "lmb": [
         {
             "title": "Linea Mamma Baby",
-            "logo_file": "esso-logo.png",
+            "logo": {
+                "file": "lmb/lmb-logo.png",
+                "_width": "111px",
+                "_height": "105px",
+                "effect": "fadeInRight"
+            },
             "bg": {
                 "color": "#9dad51",
                 "image": "lmb/teddy.png",

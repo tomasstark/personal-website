@@ -55,9 +55,29 @@ class PortfolioItem extends React.Component {
             backgroundPosition: data.bg.position
         }
 
+        let logoStyle = {
+            width: data.logo._width,
+            height: data.logo._height,
+            backgroundImage: 'url(img/portfolio/'+ data.logo.file +')',
+            backgroundSize: ''+data.logo._width+' '+data.logo._height,
+            top: data.logo._top
+        }
+
         return(
-            <div className={"col-"+this.props.cols+" portfolio__item"} style={style}>
-                <h1 className="animated fadeIn">{data.title}</h1>
+            <div className={"col-"+this.props.cols+" portfolio__item portfolio-item"} style={style}>
+                <div className="portfolio-item__logo-wrap">
+                    <div className={data.logo.effect +" portfolio-item__logo animated"} style={logoStyle}></div>
+                </div>
+                <div className="portfolio-item__stripe">
+                    <div className="grid">
+                        <div className="col-1">
+                            <h1 className="portfolio-item__title animated fadeIn">{data.title}</h1>
+                        </div>
+                        <div className="col-1">
+                            <a href="#" className="portfolio-item__button">Show more</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
