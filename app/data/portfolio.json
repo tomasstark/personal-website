@@ -12,7 +12,7 @@
             "screenshots": {
                 "mac": "vw/mac.jpg",
                 "tablet": "vw/tablet.jpg",
-                "phone": "vw/mobile.jpg"
+                "phone": "vw/phone.jpg"
             },
             "client_logo": {
                 "file": "clients/tribal.png",

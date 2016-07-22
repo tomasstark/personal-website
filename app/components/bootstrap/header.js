@@ -5,17 +5,19 @@ import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 class Header extends React.Component {
     render() {
         return (
-            <div className="container">
-                <header className="header grid">
-                    <div className="col-2">
-                        <h1 className="header__logo"><a href="/">Tomas<span className="easteregg-reverse"> </span>Stark<span className="easteregg">.rocks</span></a></h1>
-                    </div>
+            <header className="header">
+                <div className="container">
+                    <div className="grid">
+                        <div className="col-2">
+                            <h1 className="header__logo"><a href="/">Tomas<span className="easteregg-reverse"> </span>Stark<span className="easteregg">.rocks</span></a></h1>
+                        </div>
 
-                    <div className="col-3 push-right">
-                        <Navigation />
+                        <div className="col-3 push-right">
+                            <Navigation />
+                        </div>
                     </div>
-                </header>
-            </div>
+                </div>
+            </header>
         )
     }
 }

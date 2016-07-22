@@ -1,5 +1,6 @@
 import React from 'react';
 import DocumentMeta from 'react-document-meta';
+import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 
 const PortfolioItems = require('../data/portfolio.json');
 const NotFound = require('./notFound');
@@ -29,7 +30,7 @@ class PortfolioDetail extends React.Component {
             }
 
             return(
-                <div>
+                <main className="main">
                     <DocumentMeta {...meta} />
 
                     <Hero src={data.hero} />
@@ -48,10 +49,20 @@ class PortfolioDetail extends React.Component {
                         </div>
                     </section>
 
-                    <Showcase color={data.colors.color_1} screenshot={data.screenshots.mac} type="mac" />
-                    <Showcase color={data.colors.color_2} screenshot={data.screenshots.tablet} type="tablet" />
-                    <Showcase color={data.colors.color_3} screenshot={data.screenshots.phone} type="phone" />
-                </div>
+                    <section className="portfolio-detail__showcase">
+                        <Showcase color={data.colors.color_1} screenshot={data.screenshots.mac} type="mac" />
+                        <Showcase color={data.colors.color_2} screenshot={data.screenshots.tablet} type="tablet" />
+                        <Showcase color={data.colors.color_3} screenshot={data.screenshots.phone} type="phone" />
+                    </section>
+
+                    <section className="portfolio-detail__outro">
+                        <div className="grid">
+                            <div className="col-1">
+                                <p>Like this? <Link to="/contact">Hire me!</Link></p>
+                            </div>
+                        </div>
+                    </section>
+                </main>
             )
         } else {
             return (
@@ -81,9 +92,15 @@ class Showcase extends React.Component {
             backgroundColor: this.props.color
         }
 
+        let screenshotStyle = {
+            backgroundImage: 'url(/img/portfolio/'+ this.props.screenshot +')'
+        }
+
         return (
-            <section className={"portfolio-detail__showcase portfolio-showcase portfolio-showcase--"+this.props.type} style={style}>
-                <img src={this.props.screenshot} alt="" />
+            <section className={"portfolio-showcase portfolio-showcase--"+this.props.type} style={style}>
+                <div className="device">
+                    <div className="device__content" style={screenshotStyle}></div>
+                </div>
             </section>
         )
     }
