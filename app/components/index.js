@@ -10,6 +10,7 @@ class Index extends React.Component {
                 <div className="container">
                     <main className="main">
                         <h3 className="intro">{copy.intro}</h3>
+                        
                         <Portfolio />
                     </main>
                 </div>

@@ -1,9 +1,19 @@
 $site-max-width: 1200px;
 $cols: 12;
 
+// viewports
+$vp-xsmall: 320px;
+$vp-medium: 768px;
+$vp-large: 960px;
+$vp-xlarge: 1440px;
+
 .container {
     max-width: $site-max-width;
     margin: 0 auto;
+
+    @include vp($vp-medium) {
+        padding: 0 2.5%;
+    }
 }
 
 .grid {

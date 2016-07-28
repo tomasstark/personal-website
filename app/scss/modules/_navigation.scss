@@ -34,5 +34,14 @@
         &:hover {
             color: $ci-orange;
         }
+
+        &.current {
+            color: lighten($ci-orange, 20%);
+
+            &:hover {
+                cursor: default;
+                text-decoration: line-through;
+            }
+        }
     }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "tomasstark.com personal website",
+  "name": "tomasstarkrocks",
   "version": "1.0.0",
   "description": "This is codebase of my personal website. Enjoy.",
   "main": "index.js",
@@ -32,6 +32,7 @@
     "react-dom": "^15.2.0"
   },
   "dependencies": {
+    "pushstate-server": "^1.8.1",
     "react-document-meta": "^2.0.3",
     "react-router": "^2.5.2"
   }

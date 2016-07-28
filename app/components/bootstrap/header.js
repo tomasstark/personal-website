@@ -29,13 +29,13 @@ class Navigation extends React.Component {
         return (
             <ul className="navigation">
                 <li className="navigation__item">
-                    <Link to={`/`}>Work</Link>
+                    <Link to={`/`} activeClassName="current">Work</Link>
                 </li>
                 <li className="navigation__item">
-                    <Link to={`/`}>About</Link>
+                    <Link to={`about`} activeClassName="current">About</Link>
                 </li>
                 <li className="navigation__item">
-                    <Link to={`/`}>Contact</Link>
+                    <Link to={`contact`} activeClassName="current">Contact</Link>
                 </li>
             </ul>
         )

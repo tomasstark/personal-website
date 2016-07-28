@@ -5,4 +5,12 @@
     font-weight: 300;
     font-size: 3rem;
     text-align: center;
+
+    @include vp($vp-medium) {
+        margin: 100px auto 140px;
+    }
+
+    @include vp($vp-large) {
+        margin-top: 165px;
+    }
 }
