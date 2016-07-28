@@ -75,7 +75,7 @@ class PortfolioItem extends React.Component {
                             <h1 className="portfolio-item__title animated fadeIn">{data.title}</h1>
                         </div>
                         <div className="col-1">
-                            <Link to={data.link} className="portfolio-item__button">Show more</Link>
+                            <Link to={data.link} className="portfolio-item__button" target="_blank">Show more</Link>
                         </div>
                     </div>
                 </div>
