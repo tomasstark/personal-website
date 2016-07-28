@@ -4,21 +4,6 @@
             "link": "https://perfect.volkswagen.co.uk",
             "title": "My Perfect Volkswagen",
             "hero": "vw/hero.jpg",
-            "colors": {
-                "color_1": "#f26722",
-                "color_2": "#e0dfd9",
-                "color_3": "#696b73"
-            },
-            "screenshots": {
-                "mac": "vw/mac.jpg",
-                "tablet": "vw/tablet.jpg",
-                "phone": "vw/phone.jpg"
-            },
-            "client_logo": {
-                "file": "clients/tribal.png",
-                "_width": "100px",
-                "_height": "155px"
-            },
             "logo": {
                 "file": "vw/vw-logo.png",
                 "_width": "137px",
@@ -31,16 +16,13 @@
                 "position": "bottom center",
                 "size": "contain"
             },
-            "description": "I did this My Perfect Volkswagen app for my client Tribal Worldwide. Tribal and Volkswagen are long-term partners and their cooperation started in 1940 with the very first ad for VW Beetle. This project uses Backbone.js and is responsive. Take a look below. I did this My Perfect Volkswagen app for my client Tribal Worldwide. Tribal and Volkswagen are long-term partners and their cooperation started in 1940 with the very first ad for VW Beetle. This project uses Backbone.js and is responsive. Take a look below."
+            "stripe_description": "Backbone.js app for Volkswagen UK when I was working at Tribal Worldwide agency as front end developer."
         }
     ],
     "esso": [
         {
-            "link": "/work/vw",
+            "link": "http://www.esso.be/cycling",
             "title": "Esso",
-            "client_logo": {
-                "file": "clients/tribal/logo.png"
-            },
             "logo": {
                 "file": "esso/esso-logo.png",
                 "_width": "183px",
@@ -53,7 +35,7 @@
                 "position": "center right",
                 "size": "contain"
             },
-            "description": ""
+            "stripe_description": "Website for cycling competition Best of Belgium (2015) built on Bootstrap and Vanilla JS."
         }
     ],
     "freelanceri": [
@@ -75,7 +57,7 @@
                 "position": "bottom center",
                 "size": "80%"
             },
-            "description": ""
+            "stripe_description": "Backbone.js app for Tribal Worldwide where I was working as Client Side Developer."
         }
     ],
     "friedman": [
@@ -94,7 +76,7 @@
                 "position": "bottom center",
                 "size": "contain"
             },
-            "description": ""
+            "stripe_description": "Backbone.js app for Tribal Worldwide where I was working as Client Side Developer."
         }
     ],
     "sachse": [
@@ -116,7 +98,7 @@
                 "position": "right center",
                 "size": "contain"
             },
-            "description": ""
+            "stripe_description": "Backbone.js app for Tribal Worldwide where I was working as Client Side Developer."
         }
     ],
     "lmb": [
@@ -138,7 +120,7 @@
                 "position": "right bottom",
                 "size": "40%"
             },
-            "description": ""
+            "stripe_description": "Backbone.js app for Tribal Worldwide where I was working as Client Side Developer."
         }
     ]
 }

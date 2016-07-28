@@ -71,10 +71,12 @@ class PortfolioItem extends React.Component {
                 </div>
                 <div className="portfolio-item__stripe">
                     <div className="grid">
-                        <div className="col-1">
+                        <div className="col-9">
                             <h1 className="portfolio-item__title animated fadeIn">{data.title}</h1>
+
+                            <p className="portfolio-item__description">{data.stripe_description}</p>
                         </div>
-                        <div className="col-1">
+                        <div className="col-3">
                             <Link to={data.link} className="portfolio-item__button" target="_blank">Show more</Link>
                         </div>
                     </div>

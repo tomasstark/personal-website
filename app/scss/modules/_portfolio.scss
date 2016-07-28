@@ -24,9 +24,9 @@
 
         &__stripe {
             position: absolute;
-            bottom: -60px;
+            bottom: -100px;
             left: 0;
-            @include size(100%, 60px);
+            @include size(100%, 100px);
             background: rgba(0, 0, 0, .8);
             transition: all 0.2s ease-in-out;
         }
@@ -38,17 +38,26 @@
         }
 
         &__title {
+            margin-top: 10px;
             padding: 0 25px;
-            line-height: 60px;
+            line-height: 4rem;
             font-size: 1.5rem;
             color: #fff;
             text-transform: uppercase;
         }
 
+        &__description {
+            padding: 0 25px;
+            line-height: 1.75rem;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #fff;
+        }
+
         &__button {
             float: right;
             display: inline-block;
-            margin: 15px 25px;
+            margin: 35px 25px 0;
             padding: 10px 15px 8px;
             font-size: 1.3rem;
             color: #fff;
