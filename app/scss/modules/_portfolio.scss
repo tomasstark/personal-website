@@ -31,6 +31,22 @@
             transition: all 0.2s ease-in-out;
         }
 
+        &.narrow {
+            .portfolio-item__stripe {
+                bottom: -150px;
+                height: 150px;
+            }
+
+            .grid {
+                display: block;
+            }
+
+            .portfolio-item__button {
+                float: none;
+                margin-top: 15px;
+            }
+        }
+
         &:hover {
             .portfolio-item__stripe {
                 bottom: 0;

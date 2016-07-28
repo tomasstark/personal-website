@@ -56,6 +56,12 @@ class PortfolioItem extends React.Component {
             backgroundPosition: data.bg.position
         }
 
+        var extraClass = '';
+
+        if (!data.wide) {
+            extraClass = ' narrow';
+        }
+
         let logoStyle = {
             width: data.logo._width,
             height: data.logo._height,
@@ -65,7 +71,7 @@ class PortfolioItem extends React.Component {
         }
 
         return(
-            <div className={"col-"+this.props.cols+" portfolio__item portfolio-item"} style={style}>
+            <div className={"col-"+this.props.cols+" portfolio__item portfolio-item"+extraClass} style={style}>
                 <div className="portfolio-item__logo-wrap">
                     <div className={data.logo.effect +" portfolio-item__logo animated"} style={logoStyle}></div>
                 </div>

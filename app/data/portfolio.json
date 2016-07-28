@@ -16,6 +16,7 @@
                 "position": "bottom center",
                 "size": "contain"
             },
+            "wide": true,
             "stripe_description": "Backbone.js app for Volkswagen UK when I was working at Tribal Worldwide agency as front end developer."
         }
     ],
@@ -35,12 +36,13 @@
                 "position": "center right",
                 "size": "contain"
             },
+            "wide": false,
             "stripe_description": "Website for cycling competition Best of Belgium (2015) built on Bootstrap and Vanilla JS."
         }
     ],
     "freelanceri": [
         {
-            "link": "/work/vw",
+            "link": "http://freelanceri.sk",
             "title": "Freelanceri.sk",
             "client_logo": {
                 "file": "clients/tribal/logo.png"
@@ -57,12 +59,13 @@
                 "position": "bottom center",
                 "size": "80%"
             },
+            "wide": false,
             "stripe_description": "Backbone.js app for Tribal Worldwide where I was working as Client Side Developer."
         }
     ],
     "friedman": [
         {
-            "link": "/work/vw",
+            "link": "http://www.friedmanrealestate.com",
             "title": "Friedman",
             "logo": {
                 "file": "friedman/friedman-logo.png",
@@ -76,12 +79,13 @@
                 "position": "bottom center",
                 "size": "contain"
             },
+            "wide": true,
             "stripe_description": "Backbone.js app for Tribal Worldwide where I was working as Client Side Developer."
         }
     ],
     "sachse": [
         {
-            "link": "/work/vw",
+            "link": "http://www.sachseconstruction.com/about-us",
             "title": "Sachse",
             "client_logo": {
                 "file": "clients/tribal.png"
@@ -98,12 +102,13 @@
                 "position": "right center",
                 "size": "contain"
             },
+            "wide": true,
             "stripe_description": "Backbone.js app for Tribal Worldwide where I was working as Client Side Developer."
         }
     ],
     "lmb": [
         {
-            "link": "/work/vw",
+            "link": "http://www.lineamammababy.com/",
             "title": "Linea Mamma Baby",
             "client_logo": {
                 "file": "clients/tribal/logo.png"
@@ -120,6 +125,7 @@
                 "position": "right bottom",
                 "size": "40%"
             },
+            "wide": false,
             "stripe_description": "Backbone.js app for Tribal Worldwide where I was working as Client Side Developer."
         }
     ]
