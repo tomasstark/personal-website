@@ -68,7 +68,7 @@ class PortfolioItem extends React.Component {
             backgroundImage: 'url(/img/portfolio/'+ data.logo.file +')',
             backgroundSize: ''+data.logo._width+' '+data.logo._height,
             top: data.logo._top
-        }
+        };
 
         return(
             <div className={"col-"+this.props.cols+" portfolio__item portfolio-item "+data.class_name+""+extraClass} style={style}>
@@ -76,19 +76,14 @@ class PortfolioItem extends React.Component {
                     <div className={data.logo.effect +" portfolio-item__logo animated"} style={logoStyle}></div>
                 </div>
                 <div className="portfolio-item__stripe">
-                    <div className="grid">
-                        <div className="col-9">
-                            <h1 className="portfolio-item__title animated fadeIn">{data.title}</h1>
+                    <h1 className="portfolio-item__title animated fadeIn">{data.title}</h1>
 
-                <p className="portfolio-item__description" dangerouslySetInnerHTML={{__html: data.stripe_description}}></p>
-                        </div>
-                        <div className="col-3">
-                            <Link to={data.link} className="portfolio-item__button" target="_blank">Show more</Link>
-                        </div>
-                    </div>
+                    <p className="portfolio-item__description" dangerouslySetInnerHTML={{__html: data.stripe_description}}></p>
+
+                    <Link to={data.link} className="portfolio-item__button" target="_blank">Show more</Link>
                 </div>
             </div>
-        )
+        );
     }
 }
 

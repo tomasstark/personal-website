@@ -96,11 +96,6 @@
                 background-color: #fff;
                 color: $ci-orange;
             }
-
-            @include vp($vp-large) {
-                float: right;
-                margin-top: 35px;
-            }
         }
 
         .grid {
@@ -118,8 +113,31 @@
     &__item {
         &.vw {
             .portfolio-item__stripe {
-                bottom: -105px;
-                height: 105px;
+                bottom: -155px;
+                height: 155px;
+
+                @include vp($vp-large) {
+                    bottom: -150px;
+                    height: 150px;
+                }
+            }
+
+            &:hover {
+                .portfolio-item__stripe {
+                    bottom: 0;
+                }
+            }
+        }
+
+        &.esso {
+            .portfolio-item__stripe {
+                bottom: -220px;
+                height: 220px;
+
+                @include vp($vp-large) {
+                    bottom: -170px;
+                    height: 170px;
+                }
             }
 
             &:hover {
@@ -131,8 +149,13 @@
 
         &.lmb {
             .portfolio-item__stripe {
-                bottom: -155px;
-                height: 155px;
+                bottom: -170px;
+                height: 170px;
+
+                @include vp($vp-large) {
+                    bottom: -150px;
+                    height: 150px;
+                }
             }
 
             &:hover {
@@ -144,12 +167,13 @@
 
         &.sachse {
             .portfolio-item__stripe {
-                bottom: -125px;
-                height: 125px;
-            }
+                bottom: -170px;
+                height: 170px;
 
-            .portfolio-item__button {
-                margin-top: 45px;
+                @include vp($vp-large) {
+                    bottom: -150px;
+                    height: 150px;
+                }
             }
 
             &:hover {
@@ -161,12 +185,31 @@
 
         &.friedman {
             .portfolio-item__stripe {
-                bottom: -125px;
-                height: 125px;
+                bottom: -170px;
+                height: 170px;
+
+                @include vp($vp-large) {
+                    bottom: -150px;
+                    height: 150px;
+                }
             }
 
-            .portfolio-item__button {
-                margin-top: 45px;
+            &:hover {
+                .portfolio-item__stripe {
+                    bottom: 0;
+                }
+            }
+        }
+
+        &.freelanceri {
+            .portfolio-item__stripe {
+                bottom: -220px;
+                height: 220px;
+
+                @include vp($vp-large) {
+                    bottom: -170px;
+                    height: 170px;
+                }
             }
 
             &:hover {
