@@ -15,9 +15,13 @@
     }
 
     a {
-        border-bottom: 1px solid $ci-orange;
         color: $ci-orange;
         text-decoration: none;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: darken($ci-orange, 20%);
+        }
     }
 }
 
