@@ -13,4 +13,15 @@
     @include vp($vp-large) {
         margin: 165px auto 205px;
     }
+
+    a {
+        border-bottom: 1px solid $ci-orange;
+        color: $ci-orange;
+        text-decoration: none;
+    }
+}
+
+.my-name {
+    font-weight: 500;
+    color: $ci-orange;
 }

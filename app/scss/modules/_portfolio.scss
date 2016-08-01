@@ -24,17 +24,27 @@
 
         &__stripe {
             position: absolute;
-            bottom: -100px;
+            bottom: -150px;
             left: 0;
-            @include size(100%, 100px);
+            @include size(100%, 150px);
             background: rgba(0, 0, 0, .8);
             transition: all 0.2s ease-in-out;
+
+            @include vp($vp-large) {
+                bottom: -100px;
+                height: 100px;
+            }
         }
 
         &.narrow {
             .portfolio-item__stripe {
-                bottom: -150px;
-                height: 150px;
+                bottom: -190px;
+                height: 190px;
+
+                @include vp($vp-large) {
+                    bottom: -170px;
+                    height: 170px;
+                }
             }
 
             .grid {
@@ -71,9 +81,9 @@
         }
 
         &__button {
-            float: right;
+            float: none;
             display: inline-block;
-            margin: 35px 25px 0;
+            margin: 15px 25px 0;
             padding: 10px 15px 8px;
             font-size: 1.3rem;
             color: #fff;
@@ -85,6 +95,84 @@
             &:hover {
                 background-color: #fff;
                 color: $ci-orange;
+            }
+
+            @include vp($vp-large) {
+                float: right;
+                margin-top: 35px;
+            }
+        }
+
+        .grid {
+            display: block;
+        }
+
+        @include vp($vp-large) {
+            .grid {
+                 display: flex;
+            }
+        }
+    }
+
+    // overwrites
+    &__item {
+        &.vw {
+            .portfolio-item__stripe {
+                bottom: -105px;
+                height: 105px;
+            }
+
+            &:hover {
+                .portfolio-item__stripe {
+                    bottom: 0;
+                }
+            }
+        }
+
+        &.lmb {
+            .portfolio-item__stripe {
+                bottom: -155px;
+                height: 155px;
+            }
+
+            &:hover {
+                .portfolio-item__stripe {
+                    bottom: 0;
+                }
+            }
+        }
+
+        &.sachse {
+            .portfolio-item__stripe {
+                bottom: -125px;
+                height: 125px;
+            }
+
+            .portfolio-item__button {
+                margin-top: 45px;
+            }
+
+            &:hover {
+                .portfolio-item__stripe {
+                    bottom: 0;
+                }
+            }
+        }
+
+        &.friedman {
+            .portfolio-item__stripe {
+                bottom: -125px;
+                height: 125px;
+            }
+
+            .portfolio-item__button {
+                margin-top: 45px;
+            }
+
+            &:hover {
+                .portfolio-item__stripe {
+                    bottom: 0;
+                }
             }
         }
     }

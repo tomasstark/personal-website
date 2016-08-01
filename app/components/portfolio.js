@@ -71,7 +71,7 @@ class PortfolioItem extends React.Component {
         }
 
         return(
-            <div className={"col-"+this.props.cols+" portfolio__item portfolio-item"+extraClass} style={style}>
+            <div className={"col-"+this.props.cols+" portfolio__item portfolio-item "+data.class_name+""+extraClass} style={style}>
                 <div className="portfolio-item__logo-wrap">
                     <div className={data.logo.effect +" portfolio-item__logo animated"} style={logoStyle}></div>
                 </div>
@@ -80,7 +80,7 @@ class PortfolioItem extends React.Component {
                         <div className="col-9">
                             <h1 className="portfolio-item__title animated fadeIn">{data.title}</h1>
 
-                            <p className="portfolio-item__description">{data.stripe_description}</p>
+                <p className="portfolio-item__description" dangerouslySetInnerHTML={{__html: data.stripe_description}}></p>
                         </div>
                         <div className="col-3">
                             <Link to={data.link} className="portfolio-item__button" target="_blank">Show more</Link>

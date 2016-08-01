@@ -9,13 +9,13 @@ class Index extends React.Component {
             <div>
                 <div className="container">
                     <main className="main">
-                        <h3 className="intro">{copy.intro}</h3>
-                        
+                        <h3 className="intro" dangerouslySetInnerHTML={{__html: copy.intro}}></h3>
+
                         <Portfolio />
                     </main>
                 </div>
             </div>
-        )
+        );
     }
 }
 

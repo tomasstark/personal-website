@@ -1,6 +1,7 @@
 {
     "vw": [
         {
+            "class_name": "vw",
             "link": "https://perfect.volkswagen.co.uk",
             "title": "My Perfect Volkswagen",
             "hero": "vw/hero.jpg",
@@ -17,11 +18,12 @@
                 "size": "contain"
             },
             "wide": true,
-            "stripe_description": "Backbone.js app for Volkswagen UK when I was working at Tribal Worldwide agency as front end developer."
+            "stripe_description": "Backbone.js app for Volkswagen UK. Agency work while I was full time employee at Tribal Worldwide as front end developer."
         }
     ],
     "esso": [
         {
+            "class_name": "esso",
             "link": "http://www.esso.be/cycling",
             "title": "Esso",
             "logo": {
@@ -37,11 +39,12 @@
                 "size": "contain"
             },
             "wide": false,
-            "stripe_description": "Website for cycling competition Best of Belgium (2015) built on Bootstrap and Vanilla JS."
+            "stripe_description": "Website for cycling competition <b>Best of Belgium</b> built on Bootstrap and Vanilla JS :). Also one of pieces I made while being employed at Tribal Worldwide."
         }
     ],
     "freelanceri": [
         {
+            "class_name": "freelanceri",
             "link": "http://freelanceri.sk",
             "title": "Freelanceri.sk",
             "client_logo": {
@@ -60,11 +63,12 @@
                 "size": "80%"
             },
             "wide": false,
-            "stripe_description": "Backbone.js app for Tribal Worldwide where I was working as Client Side Developer."
+            "stripe_description": "I co-founded this list of freelancers available for client projects in digital media industry. WordPress work (custom theme and few plugins), mostly."
         }
     ],
     "friedman": [
         {
+            "class_name": "friedman",
             "link": "http://www.friedmanrealestate.com",
             "title": "Friedman",
             "logo": {
@@ -80,13 +84,14 @@
                 "size": "contain"
             },
             "wide": true,
-            "stripe_description": "Backbone.js app for Tribal Worldwide where I was working as Client Side Developer."
+            "stripe_description": "Complex corporate website for leading real estate agency Friedman Integrated Real Estate Solutions. Custom WordPress theme, plugins to handle generating property flyers, sending HTML emails and more."
         }
     ],
     "sachse": [
         {
+            "class_name": "sachse",
             "link": "http://www.sachseconstruction.com/about-us",
-            "title": "Sachse",
+            "title": "Sachse Construction",
             "client_logo": {
                 "file": "clients/tribal.png"
             },
@@ -103,11 +108,12 @@
                 "size": "contain"
             },
             "wide": true,
-            "stripe_description": "Backbone.js app for Tribal Worldwide where I was working as Client Side Developer."
+            "stripe_description": "Client: \"We have a website that is up and running already, and it's complex one. But we would like it to run on WordPress and be able to manage it ourselves.\" So I done that, plus responsive layout."
         }
     ],
     "lmb": [
         {
+            "class_name": "lmb",
             "link": "http://www.lineamammababy.com/",
             "title": "Linea Mamma Baby",
             "client_logo": {
@@ -126,7 +132,7 @@
                 "size": "40%"
             },
             "wide": false,
-            "stripe_description": "Backbone.js app for Tribal Worldwide where I was working as Client Side Developer."
+            "stripe_description": "Custom WooCommerce theme for Italian client selling premium products for kids."
         }
     ]
 }
