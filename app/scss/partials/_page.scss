@@ -24,10 +24,11 @@
 
     h1 {
         margin-bottom: 3rem;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 3rem;
         color: $ci-grey;
         text-transform: uppercase;
+        text-align: center;
     }
 
     p {
@@ -42,7 +43,7 @@
 
     ul {
         margin-bottom: 3rem;
-       
+
         li {
             margin-bottom: 0.5rem;
             line-height: 2rem;
