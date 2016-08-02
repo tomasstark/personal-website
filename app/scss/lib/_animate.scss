@@ -34,6 +34,12 @@
     animation-duration: .75s;
 }
 
+.delay {
+    &--p5 {
+        animation-delay: 0.5s;
+    }
+}
+
 @-webkit-keyframes bounce {
     from, 20%, 53%, 80%, to {
         -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);

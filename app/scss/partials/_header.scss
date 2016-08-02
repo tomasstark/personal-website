@@ -1,20 +1,33 @@
 .header {
-    padding: 35px 0 0;
+    height: 60px;
+    padding: 1.5rem 0 0.1rem;
+    overflow: hidden;
     background-color: #fff;
+    transition: all 0.3s ease-in-out;
+
+    &.opened {
+        height: 215px;
+    }
 
     @include vp($vp-medium) {
+        padding: 35px 0 0;
         background-color: #f7f7f7;
     }
 
     &__logo {
         position: relative;
         height: 42px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         line-height: 5rem;
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         color: $ci-orange;
         background: url(../img/logo.svg) no-repeat;
         text-transform: lowercase;
+
+        @include vp($vp-medium) {
+            margin-bottom: 40px;
+            font-size: 2.2rem;
+        }
 
         a {
             position: absolute;

@@ -1,13 +1,16 @@
 .intro {
-    max-width: 70%;
-    margin: 165px auto 205px;
-    line-height: 3.75rem;
+    max-width: 85%;
+    margin: 5rem auto;
+    line-height: 2.5rem;
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 1.75rem;
     text-align: center;
 
     @include vp($vp-medium) {
+        max-width: 70%;
         margin: 100px auto 140px;
+        line-height: 4rem;
+        font-size: 3rem;
     }
 
     @include vp($vp-large) {

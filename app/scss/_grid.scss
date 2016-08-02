@@ -10,14 +10,15 @@ $vp-xlarge: 1440px;
 .container {
     max-width: $site-max-width;
     margin: 0 auto;
-
-    @include vp($vp-medium) {
-        padding: 0 2.5%;
-    }
+    padding: 0 2.5%;
 }
 
 .grid {
-    display: flex;
+    display: block;
+
+    @include vp($vp-medium) {
+        display: flex;
+    }
 }
 
 
