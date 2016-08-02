@@ -1,0 +1,70 @@
+.static-page {
+    &__section {
+        max-width: 60%;
+        margin: 5rem auto 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__image {
+        &--circle {
+            @include size(200px, 200px);
+            margin-bottom: 3rem;
+            border-radius: 100px;
+        }
+
+        &--center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    h1 {
+        margin-bottom: 3rem;
+        font-weight: 700;
+        font-size: 3rem;
+        color: $ci-grey;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin-bottom: 3rem;
+        line-height: 2rem;
+        font-size: 1.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    ul {
+        margin-bottom: 3rem;
+       
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 2rem;
+            font-size: 1.5rem;
+
+            &:before {
+                padding: 0 10px 0 30px;
+                content: '\01F511';
+
+            }
+
+        }
+    }
+
+    a {
+        color: $ci-orange;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: darken($ci-orange, 20%);
+        }
+
+    }
+}
