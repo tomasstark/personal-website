@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
-    var sassFiles = { './dist/css/style.css': './app/scss/main.scss' };
+    var sassFiles = { './public/stylesheets/style.css': './public/stylesheets/scss/main.scss' };
 
    grunt.initConfig({
       browserify: {
@@ -10,7 +10,7 @@ module.exports = function (grunt) {
                ]
             },
             files: {
-               './dist/js/app.js': ['./app/app.js']
+               './public/javascripts/app.bundle.js': ['./react/app.js']
             }
          }
       },
@@ -30,30 +30,23 @@ module.exports = function (grunt) {
             files: sassFiles
         }
       },
-      copy: {
-        dist: {
-            files: [
-                {expand: true, cwd: 'app', src: ['index.html'], dest: 'dist/'}
-            ]
-        }
-      },
       imagemin: {
           dist: {
               files: [{
                   expand: true,
-                  cwd: 'app/img/',
+                  cwd: 'public/images/',
                   src: ['**/*.{png,jpg,svg}'],
-                  dest: 'dist/img/'
+                  dest: 'public/images/'
               }]
           }
       },
       watch: {
         scripts: {
-            files: ['app/**/*.js', 'app/**/*.json'],
+            files: ['react/**/*.js', 'public/data/**/*.json'],
             tasks: ['browserify']
         },
         styles: {
-            files: ['app/scss/**/*.scss'],
+            files: ['public/stylesheets/scss/**/*.scss'],
             tasks: ['sass']
         }
       }
@@ -61,11 +54,10 @@ module.exports = function (grunt) {
 
    grunt.loadNpmTasks('grunt-browserify');
    grunt.loadNpmTasks('grunt-contrib-sass');
-   grunt.loadNpmTasks('grunt-contrib-copy');
    grunt.loadNpmTasks('grunt-contrib-imagemin');
    grunt.loadNpmTasks('grunt-contrib-watch');
 
    grunt.registerTask('default', ['watch']);
-   grunt.registerTask('dev', ['browserify', 'sass:dev', 'copy', 'imagemin', 'watch']);
-   grunt.registerTask('prod', ['browserify', 'sass:dist', 'copy']);
+   grunt.registerTask('dev', ['browserify', 'sass:dev', 'imagemin', 'watch']);
+   grunt.registerTask('prod', ['browserify', 'sass:dist']);
 };

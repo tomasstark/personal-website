@@ -1,0 +1,108 @@
+.hamburger {
+    position: absolute;
+    top: 3rem;
+    right: 2.5%;
+    display: block; 
+    @include size(22px, 19px);
+    background: url(../images/hamburger.svg) no-repeat;
+    background-size: 22px 19px;
+
+    &.opened {
+        background-image: url(../images/nav-close.svg);
+    }
+
+    @include vp($vp-medium) {
+        display: none;
+    }
+}
+
+.navigation {
+    position: static;
+    top: -107px;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+
+    &.opened {
+        top: 38px;
+        display: block;
+    }
+
+    @include vp($vp-medium) {
+        display: block;
+        margin-top: 1.8rem;
+        padding-bottom: 0;
+        background-color: transparent;
+    }
+
+    &__item {
+        display: block;
+        width: 100%;
+        margin-bottom: 2.5rem;
+        padding: 0 10px;
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: left;
+
+        &:after {
+            content: '//';
+            padding-left: 20px;
+            font-weight: 300;
+            color: $ci-grey;
+        }
+
+        @include vp($vp-medium) {
+            display: inline-block;
+            width: auto;
+            padding: 0;
+            font-size: 1.5rem;
+            text-align: inherit;
+
+            &:before {
+                content: '//';
+                padding-right: 20px;
+                font-weight: 300;
+                color: $ci-grey;
+            }
+
+            &:after {
+                content: '';
+            }
+
+            &:first-child {
+                &:before {
+                    content: '';
+                }
+            }
+        }
+
+
+        a {
+            @extend .navigation__link;
+        }
+    }
+
+    &__link {
+        color: $ci-black;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+            color: $ci-orange;
+        }
+
+        &.current {
+            color: lighten($ci-orange, 20%);
+
+            &:hover {
+                cursor: default;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
