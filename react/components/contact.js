@@ -63,35 +63,37 @@ class Contact extends React.Component {
             <div>
                 <Header />
 
-                <section className="contact animated slideInRight">
-                    <div className="container">
-                        <header>
-                            <h1 className="contact__title">Let's talk about your project</h1>
+                <main className="main">
+                    <section className="contact animated slideInRight">
+                        <div className="container">
+                            <header>
+                                <h1 className="contact__title">Let's talk about your project</h1>
 
-                            <p className="contact__disclaimer">My hourly rate is $100. Please note minimum project rate $500.</p>
-                        </header>
+                                <p className="contact__disclaimer">My hourly rate is $100. Please note minimum project rate $500.</p>
+                            </header>
 
-                        <form method="post" action="/contactme" className="contact__form contact-form" onSubmit={this.sendMail}>
-                            <div className="grid">
-                                <div className="col-6 contact-form__item">
-                                    <label htmlFor="name">Your name</label>
-                                    <input type="text" name="name" id="name" placeholder="John Doe" required />
+                            <form method="post" action="/contactme" className="contact__form contact-form" onSubmit={this.sendMail}>
+                                <div className="grid">
+                                    <div className="col-6 contact-form__item">
+                                        <label htmlFor="name">Your name</label>
+                                        <input type="text" name="name" id="name" placeholder="John Doe" required />
+                                    </div>
+                                    <div className="col-6 contact-form__item">
+                                        <label htmlFor="email">E-mail address</label>
+                                        <input type="email" name="email" id="email" placeholder="johndoe@example.com" required />
+                                    </div>
                                 </div>
-                                <div className="col-6 contact-form__item">
-                                    <label htmlFor="email">E-mail address</label>
-                                    <input type="email" name="email" id="email" placeholder="johndoe@example.com" required />
+                                <div className="contact-form__item">
+                                    <label htmlFor="message">Message</label>
+                                    <textarea name="message" id="message" placeholder="Click here to start typing..." required></textarea>
                                 </div>
-                            </div>
-                            <div className="contact-form__item">
-                                <label htmlFor="message">Message</label>
-                                <textarea name="message" id="message" placeholder="Click here to start typing..." required></textarea>
-                            </div>
-                            <div className="contact-form__item">
-                                <input type="submit" id="submit" value="Send message" />
-                            </div>
-                        </form>
-                    </div>
-                </section>
+                                <div className="contact-form__item">
+                                    <input type="submit" id="submit" value="Send message" />
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </main>
 
                 <Footer />
             </div>

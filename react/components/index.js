@@ -9,7 +9,7 @@ class Index extends React.Component {
             <div>
                 <div className="container">
                     <main className="main">
-                <h3 className="intro animated slideInDown delay--1">Hello! My name is <span className="my-name">Tomas Stark</span> and I am a developer. I specialize in front end and can write the code for your application or do an in-depth code review of your app. Node.js is my passion and previously I did a lot of WordPress development too.</h3>
+                <h3 className="intro animated slideInDown delay--1">Hello! My name is <span className="my-name">Tomas Stark</span> and I am a developer. I specialize in front end and can make your design come true or code review your app. Previously I did a lot of WordPress development.</h3>
 
                         <Portfolio />
                     </main>

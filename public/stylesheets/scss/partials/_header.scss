@@ -1,5 +1,9 @@
 .header {
-    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    @include size(100%, 60px);
     padding: 1.5rem 0 0.1rem;
     overflow: hidden;
     background-color: #fff;
@@ -10,8 +14,20 @@
     }
 
     @include vp($vp-medium) {
+        position: static;
         padding: 35px 0 0;
         background-color: #f7f7f7;
+    }
+
+    &.fixed {
+        @include vp($vp-medium) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding-top: 15px;
+            background-color: #fff;
+        }
     }
 
     &__logo {

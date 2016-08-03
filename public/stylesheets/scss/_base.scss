@@ -19,3 +19,11 @@ body {
 em {
     font-style: italic;
 }
+
+.main {
+    margin-top: 12rem;
+
+    @include vp($vp-medium) {
+        margin-top: 0;
+    }
+}

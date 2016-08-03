@@ -4,19 +4,35 @@
     &__title {
         margin-bottom: 2.5rem;
         font-weight: 300;
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: center;
+
+        @include vp($vp-medium) {
+            font-size: 3rem;
+        }
     }
 
     &__disclaimer {
+        max-width: 80%;
+        margin: 0 auto;
+        line-height: 2rem;
         font-style: italic;
         font-size: 1.5rem;
         color: $ci-grey;
         text-align: center;
+
+        @include vp($vp-medium) {
+            max-width: none;
+            margin: 0;
+        }
     }
 
     &__form {
-        margin-top: 11rem;
+        margin-top: 6rem;
+
+        @include vp($vp-medium) {
+            margin-top: 11rem;
+        }
     }
 
     &-form {
@@ -44,9 +60,13 @@
         border-bottom: 2px solid gainsboro;
         font-family: 'proxima-nova';
         font-weight: 400;
-        font-size: 2.5rem;
+        font-size: 1.75rem;
         background-color: transparent;
         transition: border-color 0.2s ease-in-out;
+
+        @include vp($vp-medium) {
+            font-size: 2.5rem;
+        }
 
         &:focus {
             border-color: $ci-orange;
@@ -103,9 +123,13 @@
         resize: none;
         font-family: 'proxima-nova';
         font-weight: 400;
-        font-size: 2.5rem;
+        font-size: 1.75rem;
         background-color: transparent;
         transition: border-color 0.2s ease-in-out;
+
+        @include vp($vp-medium) {
+            font-size: 2.5rem;
+        }
 
         &:focus {
             border-color: $ci-orange;

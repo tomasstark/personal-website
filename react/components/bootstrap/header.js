@@ -13,6 +13,21 @@ class Header extends React.Component {
         };
     }
 
+    componentDidMount() {
+        window.onscroll = function() {
+            var bodyScrollTop = document.getElementsByTagName('body')[0].scrollTop;
+            var header = document.getElementById('site-header');
+
+            if (bodyScrollTop > 90) {
+                if (header.className.indexOf('fixed') === -1) {
+                    header.className += ' fixed';
+                }
+            } else {
+                header.className = 'header';
+            }
+        };
+    }
+
     openNavigation() {
         if (!this.state.navOpened) {
             this.setState({
@@ -31,7 +46,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <header className={this.state.headerClass}>
+            <header id="site-header" className={this.state.headerClass}>
                 <div className="container">
                     <div className="grid">
                         <div className="col-2">
