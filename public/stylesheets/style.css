@@ -3512,9 +3512,18 @@ body {
 }
 .contact input[type='submit']:hover {
   line-height: 0.2rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #f15a24;
   background-color: #fff;
+}
+.contact input[type='submit'][disabled] {
+  cursor: not-allowed;
+  background-color: #a1a1a1;
+  color: #fff;
+}
+.contact input[type='submit'][disabled]:hover {
+  line-height: 0;
+  font-size: 1.5rem;
 }
 .contact textarea {
   width: 99.7%;

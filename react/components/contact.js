@@ -20,7 +20,7 @@ class Contact extends React.Component {
         var submitButton = document.getElementById('submit');
 
         if (submitButton) {
-            console.log('y');
+            submitButton.setAttribute('disabled', '');
 
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
@@ -35,11 +35,10 @@ class Contact extends React.Component {
 
                 http.onreadystatechange = function() {
                     if (http.readyState === 4 && http.status === 200) {
-                        document.getElementById('success-message').style.display = 'block';
-
+                        submitButton.removeAttribute('disabled');
                         setTimeout(function() {
                             // remove success message
-                        }, 2000);
+                            }, 2000);
                     }
                 };
 
