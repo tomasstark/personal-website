@@ -3525,6 +3525,15 @@ body {
   line-height: 0;
   font-size: 1.5rem;
 }
+.contact input[type='submit'].sent {
+  line-height: 0.2rem;
+  font-size: 2rem;
+  color: #f15a24;
+  background-color: #fff;
+}
+.contact input[type='submit'].sent:hover {
+  color: #f15a24;
+}
 .contact textarea {
   width: 99.7%;
   min-height: 17.5rem;

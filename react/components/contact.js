@@ -21,14 +21,15 @@ class Contact extends React.Component {
 
         if (submitButton) {
             submitButton.setAttribute('disabled', '');
+            submitButton.value = 'Sending...';
 
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var message = document.getElementById('message').value;
+            var name = document.getElementById('name');
+            var email = document.getElementById('email');
+            var message = document.getElementById('message');
 
             if (name && email && message) {
                 var http = new XMLHttpRequest();
-                var params = 'name='+name+'&email='+email+'&message='+message;
+                var params = 'name='+name.value+'&email='+email.value+'&message='+message.value;
 
                 http.open('POST', '/contactme', true);
                 http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -36,9 +37,17 @@ class Contact extends React.Component {
                 http.onreadystatechange = function() {
                     if (http.readyState === 4 && http.status === 200) {
                         submitButton.removeAttribute('disabled');
+                        submitButton.className += ' sent';
+                        submitButton.value = 'Sent! I will be in touch shortly :-)';
+
+                        email.value = '';
+                        name.value = '';
+                        message.value = '';
+
                         setTimeout(function() {
-                            // remove success message
-                            }, 2000);
+                            submitButton.className = '';
+                            submitButton.value = 'Send message';
+                        }, 3500);
                     }
                 };
 
@@ -59,7 +68,7 @@ class Contact extends React.Component {
                         <header>
                             <h1 className="contact__title">Let's talk about your project</h1>
 
-                            <p className="contact__disclaimer">My hourly rate is $80. Please note minimum project rate $400.</p>
+                            <p className="contact__disclaimer">My hourly rate is $100. Please note minimum project rate $500.</p>
                         </header>
 
                         <form method="post" action="/contactme" className="contact__form contact-form" onSubmit={this.sendMail}>
