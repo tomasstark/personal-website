@@ -1,4 +1,6 @@
 html {
+    position: relative;
+    min-height: 100%;
     font-size: 62.5%;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
@@ -9,9 +11,8 @@ html {
 }
 
 body {
+    margin-bottom: 140px;
     font-family: 'proxima-nova';
     background-color: #f7f7f7;
 }
 
-.main {
-}
