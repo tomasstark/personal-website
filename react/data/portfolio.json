@@ -28,8 +28,8 @@
             "title": "Esso",
             "logo": {
                 "file": "esso/esso-logo.png",
-                "_width": "183px",
-                "_height": "129px",
+                "_width": "180px",
+                "_height": "128px",
                 "effect": "fadeInRight"
             },
             "bg": {
@@ -98,7 +98,7 @@
             "logo": {
                 "file": "sachse/sachse-logo.png",
                 "_width": "301px",
-                "_height": "59px",
+                "_height": "58px",
                 "effect": "fadeInLeft"
             },
             "bg": {

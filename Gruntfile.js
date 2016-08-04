@@ -14,6 +14,13 @@ module.exports = function (grunt) {
             }
          }
       },
+       uglify: {
+           dist: {
+               files: {
+                   './public/javascripts/app.bundle.js': ['./public/javascripts/app.bundle.js']
+               }
+           }
+       },
       sass: {
         dist: {
             options: {
@@ -32,6 +39,9 @@ module.exports = function (grunt) {
       },
       imagemin: {
           dist: {
+              options: {
+                  optimizationLevel: 4
+              },
               files: [{
                   expand: true,
                   cwd: 'public/images/',
@@ -52,12 +62,13 @@ module.exports = function (grunt) {
       }
    });
 
-   grunt.loadNpmTasks('grunt-browserify');
+    grunt.loadNpmTasks('grunt-browserify');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
    grunt.loadNpmTasks('grunt-contrib-sass');
    grunt.loadNpmTasks('grunt-contrib-imagemin');
    grunt.loadNpmTasks('grunt-contrib-watch');
 
    grunt.registerTask('default', ['watch']);
    grunt.registerTask('dev', ['browserify', 'sass:dev', 'imagemin', 'watch']);
-   grunt.registerTask('prod', ['browserify', 'sass:dist']);
+    grunt.registerTask('prod', ['browserify', 'uglify', 'sass:dist']);
 };
