@@ -1,7 +1,15 @@
 module.exports = function (grunt) {
     var sassFiles = { './public/stylesheets/style.css': './public/stylesheets/scss/main.scss' };
 
-   grunt.initConfig({
+    grunt.initConfig({
+        env: {
+            dev: {
+                NODE_ENV: 'development'
+            },
+            prod: {
+                NODE_ENV: 'production'
+            }
+        },
       browserify: {
          dist: {
             options: {
@@ -63,12 +71,13 @@ module.exports = function (grunt) {
    });
 
     grunt.loadNpmTasks('grunt-browserify');
+    grunt.loadNpmTasks('grunt-env');
     grunt.loadNpmTasks('grunt-contrib-uglify');
    grunt.loadNpmTasks('grunt-contrib-sass');
    grunt.loadNpmTasks('grunt-contrib-imagemin');
    grunt.loadNpmTasks('grunt-contrib-watch');
 
    grunt.registerTask('default', ['watch']);
-   grunt.registerTask('dev', ['browserify', 'sass:dev', 'imagemin', 'watch']);
-    grunt.registerTask('prod', ['browserify', 'uglify', 'sass:dist']);
+    grunt.registerTask('dev', ['env:dev', 'browserify', 'sass:dev', 'imagemin', 'watch']);
+    grunt.registerTask('prod', ['env:prod', 'browserify', 'uglify', 'sass:dist']);
 };
