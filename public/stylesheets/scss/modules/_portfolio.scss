@@ -2,12 +2,25 @@
     opacity: 0;
 
     &__item {
-        height: 330px;
+        height: 33rem;
+
+        &.esso {
+            background-size: cover !important;
+
+            @include vp($vp-xlarge) {
+                background-size: contain !important;
+            }
+        }
     }
 
     &-item {
         position: relative;
+        margin-bottom: 5rem;
         overflow: hidden;
+
+        @include vp($vp-medium) {
+            margin-bottom: 0;
+        }
 
         &__logo-wrap {
             display: flex;
@@ -24,36 +37,22 @@
 
         &__stripe {
             position: absolute;
-            bottom: -150px;
+            bottom: -35rem;
             left: 0;
-            @include size(100%, 150px);
+            width: 100%;
+            padding-bottom: 2.5rem;
             background: rgba(0, 0, 0, .8);
-            transition: all 0.2s ease-in-out;
-
-            @include vp($vp-large) {
-                bottom: -100px;
-                height: 100px;
-            }
+            transition: all 0.4s ease-in-out;
         }
 
         &.narrow {
-            .portfolio-item__stripe {
-                bottom: -190px;
-                height: 190px;
-
-                @include vp($vp-large) {
-                    bottom: -170px;
-                    height: 170px;
-                }
-            }
-
             .grid {
                 display: block;
             }
 
             .portfolio-item__button {
                 float: none;
-                margin-top: 15px;
+                margin-top: 1.5rem;
             }
         }
 
@@ -64,18 +63,18 @@
         }
 
         &__title {
-            margin-top: 10px;
-            padding: 0 25px;
+            margin-top: 1rem;
+            padding: 0 2.5rem;
             line-height: 4rem;
+            font-weight: 500;
             font-size: 1.5rem;
             color: #fff;
             text-transform: uppercase;
         }
 
         &__description {
-            padding: 0 25px;
-            line-height: 1.75rem;
-            font-style: italic;
+            padding: 0 2.5rem;
+            line-height: 1.9rem;
             font-size: 1.4rem;
             color: #fff;
         }
@@ -83,8 +82,8 @@
         &__button {
             float: none;
             display: inline-block;
-            margin: 15px 25px 0;
-            padding: 10px 15px 8px;
+            margin: 1.5rem 2.5rem 0;
+            padding: 1rem 1.5rem 0.8rem;
             font-size: 1.3rem;
             color: #fff;
             text-decoration: none;
@@ -105,117 +104,6 @@
         @include vp($vp-large) {
             .grid {
                  display: flex;
-            }
-        }
-    }
-
-    // overwrites
-    &__item {
-        &.vw {
-            .portfolio-item__stripe {
-                bottom: -155px;
-                height: 155px;
-
-                @include vp($vp-large) {
-                    bottom: -150px;
-                    height: 150px;
-                }
-            }
-
-            &:hover {
-                .portfolio-item__stripe {
-                    bottom: 0;
-                }
-            }
-        }
-
-        &.esso {
-            .portfolio-item__stripe {
-                bottom: -220px;
-                height: 220px;
-
-                @include vp($vp-large) {
-                    bottom: -170px;
-                    height: 170px;
-                }
-            }
-
-            &:hover {
-                .portfolio-item__stripe {
-                    bottom: 0;
-                }
-            }
-        }
-
-        &.lmb {
-            .portfolio-item__stripe {
-                bottom: -170px;
-                height: 170px;
-
-                @include vp($vp-large) {
-                    bottom: -150px;
-                    height: 150px;
-                }
-            }
-
-            &:hover {
-                .portfolio-item__stripe {
-                    bottom: 0;
-                }
-            }
-        }
-
-        &.sachse {
-            .portfolio-item__stripe {
-                bottom: -170px;
-                height: 170px;
-
-                @include vp($vp-large) {
-                    bottom: -150px;
-                    height: 150px;
-                }
-            }
-
-            &:hover {
-                .portfolio-item__stripe {
-                    bottom: 0;
-                }
-            }
-        }
-
-        &.friedman {
-            .portfolio-item__stripe {
-                bottom: -170px;
-                height: 170px;
-
-                @include vp($vp-large) {
-                    bottom: -150px;
-                    height: 150px;
-                }
-            }
-
-            &:hover {
-                .portfolio-item__stripe {
-                    bottom: 0;
-                }
-            }
-        }
-
-        &.freelanceri {
-            .portfolio-item__stripe {
-                bottom: -220px;
-                height: 220px;
-
-                @include vp($vp-large) {
-                    bottom: -170px;
-                    height: 170px;
-                }
-            }
-
-            &:hover {
-                .portfolio-item__stripe {
-                    bottom: 0;
-                }
             }
         }
     }

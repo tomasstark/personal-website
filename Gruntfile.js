@@ -42,7 +42,7 @@ module.exports = function (grunt) {
       },
       watch: {
         scripts: {
-            files: ['react/**/*.js', 'public/data/**/*.json'],
+            files: ['react/**/*.js', 'react/data/**/*.json'],
             tasks: ['browserify']
         },
         styles: {

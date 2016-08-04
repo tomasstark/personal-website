@@ -18,7 +18,7 @@
                 "size": "contain"
             },
             "wide": true,
-            "stripe_description": "Backbone.js app for Volkswagen UK. Agency work while I was full time employee at Tribal Worldwide as front end developer."
+            "stripe_description": "Backbone.js app for Volkswagen UK. I have been working on this at my job in Tribal Worldwide along with 2 other team members. It is the app for people who know their needs for the car but have not decided on actual model yet."
         }
     ],
     "esso": [
@@ -39,7 +39,7 @@
                 "size": "contain"
             },
             "wide": false,
-            "stripe_description": "Website for cycling competition <b>Best of Belgium</b> built on Bootstrap and Vanilla JS :). Also one of pieces I made while being employed at Tribal Worldwide."
+            "stripe_description": "Website for cycling competition <b>Best of Belgium</b> built on Bootstrap. Part of scripts use jQuery while the other part use Vanilla JS. This was a very short turnaround project and I have been working on this as a senior front end developer at Tribal Worldwide agency."
         }
     ],
     "freelanceri": [
@@ -63,7 +63,7 @@
                 "size": "80%"
             },
             "wide": false,
-            "stripe_description": "I co-founded this list of freelancers available for client projects in digital media industry. WordPress work (custom theme and few plugins), mostly."
+            "stripe_description": "This is my personal project that I co-founded. It is list of freelancers in Slovakia working in digital media industry available for hire by agencies. The site was done in WordPress, is running on custom theme and uses custom plugin to handle random sorting of people in the list."
         }
     ],
     "friedman": [
@@ -84,7 +84,7 @@
                 "size": "contain"
             },
             "wide": true,
-            "stripe_description": "Complex corporate website for leading real estate agency Friedman Integrated Real Estate Solutions. Custom WordPress theme, plugins to handle generating property flyers, sending HTML emails and more."
+            "stripe_description": "Complex corporate website for leading real estate agency Friedman Integrated Real Estate Solutions based in Michigan, US. The site was built entirely in WordPress with a lot of custom plugins to handle search functionality, generating flyers for properties in both email and printable version, calculating available space in leased properties and more. Front end tools of choice were Vanilla JS and jQuery with some elements from jQuery UI."
         }
     ],
     "sachse": [
@@ -108,7 +108,7 @@
                 "size": "contain"
             },
             "wide": true,
-            "stripe_description": "Client: \"We have a website that is up and running already, and it's complex one. But we would like it to run on WordPress and be able to manage it ourselves.\" So I done that, plus responsive layout."
+            "stripe_description": "I never did anything like what I did for Sachse Construction during this project. They had an old outdated website running on .NET and were interested in making a switch to WordPress. Unfortunately, due to some leadership decision they decided to change the design later and only implement responsive features to current design. But the site code was successfuly rewritten to WordPress standards and client is very happy with the result."
         }
     ],
     "lmb": [
@@ -132,7 +132,7 @@
                 "size": "40%"
             },
             "wide": false,
-            "stripe_description": "Custom WooCommerce theme for Italian client selling premium products for kids."
+            "stripe_description": "Custom WooCommerce theme for LABE, Italian agency. Their client demanded eshop that is responsive, easy to use and with subtle playful design. The shop is selling their own branded premium cosmetics for kids."
         }
     ]
 }

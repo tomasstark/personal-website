@@ -4,26 +4,31 @@
 
     &__icon {
         display: inline-block;
-        margin-right: 32px;
+        margin-right: 3.2rem;
         text-indent: -9999px;
         background: url(../images/social.png) no-repeat;
         background-size: 134px 23px;
+        transform: scale(0.8);
+
+        @include vp($vp-medium) {
+            transform: scale(1);
+        }
 
         &:last-child {
             margin-right: 0;
         }
 
         &--github {
-            @include size(24px, 23px);
+            @include size(2.4rem, 2.3rem);
         }
 
         &--twitter {
-            @include size(27px, 23px);
+            @include size(2.7rem, 2.3rem);
             background-position: -54px 0;
         }
 
         &--fb {
-            @include size(23px, 23px);
+            @include size(2.3rem, 2.3rem);
             background-position: -111px 0;
         }
 

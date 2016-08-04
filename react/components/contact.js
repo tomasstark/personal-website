@@ -69,7 +69,7 @@ class Contact extends React.Component {
                             <header>
                                 <h1 className="contact__title">Let's talk about your project</h1>
 
-                                <p className="contact__disclaimer">My hourly rate is $100. Please note minimum project rate $500.</p>
+                                {/* <p className="contact__disclaimer">My hourly rate is $100. Please note minimum project rate $500.</p> */}
                             </header>
 
                             <form method="post" action="/contactme" className="contact__form contact-form" onSubmit={this.sendMail}>

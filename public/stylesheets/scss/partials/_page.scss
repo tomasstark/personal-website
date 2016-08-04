@@ -14,12 +14,12 @@
 
     &__image {
         &--circle {
-            @include size(150px, 150px);
+            @include size(15rem, 15rem);
             margin: 6rem 0 3rem;
-            border-radius: 100px;
+            border-radius: 10rem;
 
             @include vp($vp-medium) {
-                @include size(200px, 200px);
+                @include size(20rem, 20rem);
             }
         }
 

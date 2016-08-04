@@ -8,13 +8,13 @@
 
     @include vp($vp-medium) {
         max-width: 70%;
-        margin: 100px auto 140px;
+        margin: 10rem auto 14rem;
         line-height: 3.8rem;
         font-size: 2.8rem;
     }
 
     @include vp($vp-large) {
-        margin: 165px auto 205px;
+        margin: 16.5rem auto 20.5rem;
         line-height: 4rem;
         font-size: 3rem;
     }
