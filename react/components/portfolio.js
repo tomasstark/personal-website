@@ -85,7 +85,7 @@ class PortfolioItem extends React.Component {
         };
 
         return(
-            <div className={"col-"+this.props.cols+" portfolio__item portfolio-item "+data.class_name+""+extraClass} style={style} ontouchstart={this.togglePortfolioStripeClassForTouch} ontouchend={this.togglePortfolioStripeClassForTouch}>
+            <div className={"col-"+this.props.cols+" portfolio__item portfolio-item "+data.class_name+""+extraClass} style={style} onTouchStart={this.togglePortfolioStripeClassForTouch} onTouchEnd={this.togglePortfolioStripeClassForTouch}>
                 <div className="portfolio-item__logo-wrap">
                     <div className={data.logo.effect +" portfolio-item__logo animated"} style={logoStyle}></div>
                 </div>
