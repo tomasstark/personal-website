@@ -28,7 +28,7 @@ app.post('/contactme', function(req, res) {
         to: 'hi@tomasstark.rocks',
         replyTo: email,
         subject: 'New message from tomasstark.rocks',
-        html: message
+        html: message.replace(/\n/g, '<br/>')
     };
 
     transporter.sendMail(mailOptions, function(error, info) {
