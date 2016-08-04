@@ -4,7 +4,6 @@
             "class_name": "vw",
             "link": "https://perfect.volkswagen.co.uk",
             "title": "My Perfect Volkswagen",
-            "hero": "vw/hero.jpg",
             "logo": {
                 "file": "vw/vw-logo.png",
                 "_width": "137px",
@@ -18,7 +17,9 @@
                 "size": "contain"
             },
             "wide": true,
-            "stripe_description": "Backbone.js app for Volkswagen UK. I have been working on this at my job in Tribal Worldwide along with 2 other team members. It is the app for people who know their needs for the car but have not decided on actual model yet."
+            "client": "Tribal Worldwide",
+            "technologies": "Backbone.js, Groovy/GSP, CSS",
+            "stripe_description": "App helping people to choose the car based on their needs. I’ve led a team of three front-end developers working on this project."
         }
     ],
     "esso": [
@@ -39,7 +40,9 @@
                 "size": "contain"
             },
             "wide": false,
-            "stripe_description": "Website for cycling competition <b>Best of Belgium</b> built on Bootstrap. Part of scripts use jQuery while the other part use Vanilla JS. This was a very short turnaround project and I have been working on this as a senior front end developer at Tribal Worldwide agency."
+            "client": "Tribal Worldwide",
+            "technologies": "Bootstrap, Javascript, jQuery",
+            "stripe_description": "Website for the cycling competition called Best of Belgium. This was a very short turnaround project and I have been working on it as a senior front-end developer."
         }
     ],
     "freelanceri": [
@@ -47,9 +50,6 @@
             "class_name": "freelanceri",
             "link": "http://freelanceri.sk",
             "title": "Freelanceri.sk",
-            "client_logo": {
-                "file": "clients/tribal/logo.png"
-            },
             "logo": {
                 "file": "freelanceri/freelanceri-logo.png",
                 "_width": "253px",
@@ -63,14 +63,16 @@
                 "size": "80%"
             },
             "wide": false,
-            "stripe_description": "This is my personal project that I co-founded. It is list of freelancers in Slovakia working in digital media industry available for hire by agencies. The site was done in WordPress, is running on custom theme and uses custom plugin to handle random sorting of people in the list."
+            "client": "personal",
+            "technologies": "WordPress",
+            "stripe_description": "List of Slovak freelancers working in digital media industry available for hire by agencies. I’ve co-founded the project and I was the only developer in the team. It is running on custom theme and uses custom plugin to handle random sorting of people in the list."
         }
     ],
     "friedman": [
         {
             "class_name": "friedman",
             "link": "http://www.friedmanrealestate.com",
-            "title": "Friedman",
+            "title": "Friedman Integrated Real Estate Solutions",
             "logo": {
                 "file": "friedman/friedman-logo.png",
                 "_width": "324px",
@@ -84,7 +86,9 @@
                 "size": "contain"
             },
             "wide": true,
-            "stripe_description": "Complex corporate website for leading real estate agency Friedman Integrated Real Estate Solutions based in Michigan, US. The site was built entirely in WordPress with a lot of custom plugins to handle search functionality, generating flyers for properties in both email and printable version, calculating available space in leased properties and more. Front end tools of choice were Vanilla JS and jQuery with some elements from jQuery UI."
+            "client": "Friedman Integrated Real Estate Solutions",
+            "technologies": "WordPress, PHP, MySQL, jQuery, jQuery UI, JavaScript",
+            "stripe_description": "Complex corporate website for leading real estate agency based in Michigan. The site was built entirely in WordPress with a lot of custom plugins to handle search functionality, generating flyers for properties in both email and printable version, calculating available space in leased properties and more."
         }
     ],
     "sachse": [
@@ -92,9 +96,6 @@
             "class_name": "sachse",
             "link": "http://www.sachseconstruction.com/about-us",
             "title": "Sachse Construction",
-            "client_logo": {
-                "file": "clients/tribal.png"
-            },
             "logo": {
                 "file": "sachse/sachse-logo.png",
                 "_width": "301px",
@@ -108,7 +109,9 @@
                 "size": "contain"
             },
             "wide": true,
-            "stripe_description": "I never did anything like what I did for Sachse Construction during this project. They had an old outdated website running on .NET and were interested in making a switch to WordPress. Unfortunately, due to some leadership decision they decided to change the design later and only implement responsive features to current design. But the site code was successfuly rewritten to WordPress standards and client is very happy with the result."
+            "client": "Sachse Construction",
+            "technologies": "WordPress, CSS",
+            "stripe_description": "US based real estate agency. I’ve completely rewritten the outdated .NET codebase to WordPress. Unfortunately, the site was not redesigned and I’ve ended up only implementing responsive features to an old design."
         }
     ],
     "lmb": [
@@ -116,9 +119,6 @@
             "class_name": "lmb",
             "link": "http://www.lineamammababy.com/",
             "title": "Linea Mamma Baby",
-            "client_logo": {
-                "file": "clients/tribal/logo.png"
-            },
             "logo": {
                 "file": "lmb/lmb-logo.png",
                 "_width": "111px",
@@ -132,7 +132,9 @@
                 "size": "40%"
             },
             "wide": false,
-            "stripe_description": "Custom WooCommerce theme for LABE, Italian agency. Their client demanded eshop that is responsive, easy to use and with subtle playful design. The shop is selling their own branded premium cosmetics for kids."
+            "client": "LABE",
+            "technologies": "WooCommerce, CSS, JavaScript",
+            "stripe_description": "E-shop selling branded premium cosmetics for kids. I’ve build a custom WooCommerce theme that is responsive and easy to use."
         }
     ]
 }

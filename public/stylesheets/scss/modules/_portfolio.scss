@@ -40,7 +40,7 @@
             bottom: -35rem;
             left: 0;
             width: 100%;
-            padding-bottom: 2.5rem;
+            padding: 0 0 2.5rem;
             background: rgba(0, 0, 0, .8);
             transition: all 0.4s ease-in-out;
         }
@@ -56,7 +56,7 @@
             }
         }
 
-        &:hover {
+        &:hover, &:focus {
             .portfolio-item__stripe {
                 bottom: 0;
             }
@@ -72,11 +72,39 @@
             text-transform: uppercase;
         }
 
+        &__details {
+            padding: 0 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.7rem;
+            font-size: 1.3rem;
+            color: #fff;
+
+            @include vp($vp-medium) {
+                line-height: 1.9rem;
+                font-size: 1.4rem;
+            }
+
+            li {
+                display: block;
+
+                &:before {
+                    content: '\00bb';
+                    padding-right: 0.5rem;
+                    color: $ci-grey;
+                }
+            }
+        }
+
         &__description {
             padding: 0 2.5rem;
-            line-height: 1.9rem;
-            font-size: 1.4rem;
+            line-height: 1.7rem;
+            font-size: 1.3rem;
             color: #fff;
+
+            @include vp($vp-medium) {
+                line-height: 1.9rem;
+                font-size: 1.4rem;
+            }
         }
 
         &__button {

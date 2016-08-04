@@ -78,9 +78,14 @@ class PortfolioItem extends React.Component {
                 <div className="portfolio-item__stripe">
                     <h1 className="portfolio-item__title animated fadeIn">{data.title}</h1>
 
+                    <ul className="portfolio-item__details">
+                        <li>Client: {data.client}</li>
+                        <li>Technologies: {data.technologies}</li>
+                    </ul>
+
                     <p className="portfolio-item__description" dangerouslySetInnerHTML={{__html: data.stripe_description}}></p>
 
-                    <Link to={data.link} className="portfolio-item__button" target="_blank">Show more</Link>
+                    <Link to={data.link} className="portfolio-item__button" target="_blank">Go to website</Link>
                 </div>
             </div>
         );
