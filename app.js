@@ -21,15 +21,7 @@ app.post('/contactme', function(req, res) {
     var email = req.body.email;
     var message = req.body.message;
 
-    var transporter = nodemailer.createTransport('SMTP', {
-        host: 'smtp.gmail.com',
-        port: 587,
-        secure: true,
-        auth: {
-            user: 'budgingjet@gmail.com',
-            pass: 'nevieM.0123'
-        }
-    });
+    var transporter = nodemailer.createTransport('smtps://budgingjet%40gmail.com:nevieM.0123@smtp.gmail.com');
 
     var mailOptions = {
         from: '"'+name+'" <'+email+'>',
@@ -41,7 +33,7 @@ app.post('/contactme', function(req, res) {
 
     transporter.sendMail(mailOptions, function(error, info) {
         if (error) {
-            res.send({status: 'fail'});
+            res.send({status: error + info});
         } else {
             res.send({status: 'sent'});
         }
