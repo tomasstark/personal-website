@@ -45,6 +45,20 @@ class PortfolioItem extends React.Component {
         return data;
     }
 
+    togglePortfolioStripeClassForTouch(e) {
+        e = e || window.event;
+
+        var target = e.target || e.srcElement;
+        var targetChilds = target.childNodes;
+        var portfolioStripe = targetChilds[1];
+
+        if (portfolioStripe.className.indexOf('touch') === -1) {
+            portfolioStripe.className += ' touch';
+        } else {
+            portfolioStripe.className = 'portfolio-item__stripe';
+        }
+    }
+
     render() {
         const data = this.getItemInfo(this.props.item);
 
@@ -71,7 +85,7 @@ class PortfolioItem extends React.Component {
         };
 
         return(
-            <div className={"col-"+this.props.cols+" portfolio__item portfolio-item "+data.class_name+""+extraClass} style={style} ontouchstart="">
+            <div className={"col-"+this.props.cols+" portfolio__item portfolio-item "+data.class_name+""+extraClass} style={style} ontouchstart={this.togglePortfolioStripeClassForTouch} ontouchend={this.togglePortfolioStripeClassForTouch}>
                 <div className="portfolio-item__logo-wrap">
                     <div className={data.logo.effect +" portfolio-item__logo animated"} style={logoStyle}></div>
                 </div>
