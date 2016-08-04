@@ -49,6 +49,8 @@ class Contact extends React.Component {
                         name.value = '';
                         message.value = '';
 
+                        ga('send', 'event', 'email', 'send');
+
                         setTimeout(function() {
                             submitButton.className = '';
                             submitButton.value = 'Send message';
