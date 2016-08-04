@@ -16,7 +16,7 @@ class Contact extends React.Component {
 
     componentDidMount() {
         // to fix the weird bug with animation on mobiles
-        window.scroll(0);
+        window.scroll(0, 0);
     }
 
     sendMail(e) {
