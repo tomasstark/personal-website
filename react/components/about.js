@@ -39,7 +39,6 @@ class About extends React.Component {
 
                                 <p>Sounds convincing? I am currently available for new projects. <Link to="/contact">Hire me!</Link></p>
                             </section>
-
                         </div>
                     </section>
                 </main>
