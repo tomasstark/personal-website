@@ -10,6 +10,11 @@ const Contact = require('./components/contact');
 /* const NotFound = require('./components/notFound');*/
 
 class App extends React.Component {
+    componentDidMount() {
+        // to fix the weird bug with animation on mobiles
+        window.scroll(0, 0);
+    }
+
     render() {
         return (
             <div>

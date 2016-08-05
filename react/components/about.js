@@ -11,6 +11,11 @@ class About extends React.Component {
         super(props);
     }
 
+    componentDidMount() {
+        // to fix the weird bug with animation on mobiles
+        window.scroll(0, 0);
+    }
+
     render() {
         return(
             <div>
