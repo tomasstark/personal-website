@@ -1,17 +1,16 @@
 .hamburger {
     position: absolute;
-    top: 0;
+    top: 2.2rem;
     right: 2.5%;
     z-index: 10;
     display: block; 
-    @include size(35px, 100%);
+    @include size(35px, 35px);
     background: url(../images/hamburger.svg) no-repeat;
     background-size: 22px 19px;
-    background-position: 50% 50%;
+    background-position: 50%;
 
     &.opened {
         background-image: url(../images/nav-close.svg);
-        background-position: 50% 3rem;
     }
 
     @include vp($vp-medium) {

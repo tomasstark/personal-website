@@ -11,6 +11,8 @@ class Header extends React.Component {
             headerClass: 'header',
             hamburgerClass: ''
         };
+
+        this.openNavigation = this.openNavigation.bind(this);
     }
 
     componentDidMount() {
@@ -28,7 +30,9 @@ class Header extends React.Component {
         };
     }
 
-    openNavigation() {
+    openNavigation(e) {
+        e.preventDefault();
+
         if (!this.state.navOpened) {
             this.setState({
                 navOpened: true,
@@ -56,7 +60,7 @@ class Header extends React.Component {
                         <div className="col-3 push-right">
                             <Navigation />
 
-                            <a className={this.state.hamburgerClass + " hamburger"} href="#" onClick={() => this.openNavigation()}></a>
+                            <a className={this.state.hamburgerClass + " hamburger"} href="#" onClick={this.openNavigation}></a>
                         </div>
                     </div>
                 </div>
