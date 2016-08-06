@@ -50,7 +50,6 @@ class Contact extends React.Component {
                         message.value = '';
 
                         // track fb and ga
-                        fbq('track', 'Lead');
                         ga('send', 'event', 'email', 'send');
 
                         setTimeout(function() {
