@@ -22,7 +22,7 @@ em {
 
 .main {
     overflow: hidden;
-    margin-top: 12rem;
+    margin-top: 7.5rem;
 
     @include vp($vp-medium) {
         margin-top: 0;
