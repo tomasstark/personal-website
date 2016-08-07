@@ -40,6 +40,11 @@ app.post('/contactme', function(req, res) {
     });
 });
 
+app.get('/robots.txt', function (req, res) {
+    res.type('text/plain');
+    res.sendFile(__dirname + '/robots.txt');
+});
+
 app.use('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
