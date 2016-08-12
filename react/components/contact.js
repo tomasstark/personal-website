@@ -77,7 +77,7 @@ class Contact extends React.Component {
                             <header>
                                 <h1 className="contact__title">Let's talk about your project</h1>
 
-                                {/* <p className="contact__disclaimer">My hourly rate is $100. Please note minimum project rate $500.</p> */}
+                                <p className="contact__disclaimer">Don't feel like filling the form? <a href="mailto:hi@tomasstark.rocks?subject=Hey Tomas!">Send me an email</a> from your favorite email client instead.</p>
                             </header>
 
                             <form method="post" action="/contactme" className="contact__form contact-form" onSubmit={this.sendMail}>

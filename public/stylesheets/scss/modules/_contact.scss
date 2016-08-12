@@ -25,6 +25,15 @@
             max-width: none;
             margin: 0;
         }
+
+        a {
+            color: $ci-orange;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
     &__form {
