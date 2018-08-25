@@ -32,7 +32,7 @@ app.post('/contactme', function(req, res) {
     var nodemailerMailgun = nodemailer.createTransport(mg(auth));
 
     var mailOptions = {
-        from: '"'+name+'" <'+email+'>',
+        from: email,
         to: 'hi@tomasstark.rocks',
         'h:Reply-To': email,
         subject: 'New message from tomasstark.rocks',
