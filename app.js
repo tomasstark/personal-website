@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
+var mg = require('nodemailer-mailgun-transport');
 
 var app = express();
 
@@ -21,17 +22,24 @@ app.post('/contactme', function(req, res) {
     var email = req.body.email;
     var message = req.body.message;
 
-    var transporter = nodemailer.createTransport('smtps://budgingjet%40gmail.com:nevieM.0123@smtp.gmail.com');
+    var auth = {
+        auth: {
+            api_key: '43858566bc5507f2e1b86608752df673-7efe8d73-f830fb1c',
+            domain: 'mg.tomasstark.com'
+        }
+    };
+
+    var nodemailerMailgun = nodemailer.createTransport(mg(auth));
 
     var mailOptions = {
         from: '"'+name+'" <'+email+'>',
         to: 'hi@tomasstark.rocks',
-        replyTo: email,
+        'h:Reply-To': email,
         subject: 'New message from tomasstark.rocks',
         html: message.replace(/\n/g, '<br/>')
     };
 
-    transporter.sendMail(mailOptions, function(error, info) {
+    nodemailerMailgun.sendMail(mailOptions, function(error, info) {
         if (error) {
             res.send({status: error + info});
         } else {
